@@ -10,31 +10,40 @@
         
         $(document).ready(function(){
                 $("#portfolio ul li").mouseenter(function(){
-                $(this).css("background-color","#00004d"); 
+                $(this).css("background-color","#d147a3"); 
                 });
                 $("#portfolio ul li").mouseleave(function(){
-                $(this).css("background-color","#ff0080");    
+                $(this).css("background-color","#00004d");    
             });     
         })
         $(document).ready(function(){
                 $("#portfolio ul li a").mouseenter(function(){
-                $(this).css("color","red"); 
+                $(this).css("color","gold"); 
                 });
                 $("#portfolio ul li a").mouseleave(function(){
-                $(this).css("color","white");    
+                $(this).css("color","#94b8b8");    
             });     
         })
 
 $(document).ready(function(){
                 $("#skills1 ul li, #skills2 ul li").mouseenter(function(){
-                $(this).css("background-color","#00004d");
-                $(this).css("color","green");
+                $(this).css("background-color","#d147a3");
+                $(this).css("color","gold");
                 });
                 $("#skills1 ul li, #skills2 ul li").mouseleave(function(){
-                $(this).css("background-color","#ff0080"); 
-                $(this).css("color","white");
+                $(this).css("background-color","#00004d"); 
+                $(this).css("color","#94b8b8");
             });     
         })
+     $(document).ready(function(){
+                $("#address a").mouseenter(function(){
+                $(this).css("color","yellow");               
+                });
+                $("#address a").mouseleave(function(){ 
+                $(this).css("color","blue");
+            });     
+        })
+     
 // smooth scrolling     
  $(function() {
     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
@@ -163,32 +172,32 @@ $(document).ready(function(){
     margin-top: 50px;
 }
 body{
-  background-color:	#ff0080;
+  background-color:	#00004d;
 }
 p{
   margin-left: 30px;
   text-align: left;
-  color:white;
+  color:#94b8b8;
   font-family: Optima;
   font-size: 18px;
 
 }
 
 h1{
-  color: #00004d;
+  color: #94b8b8;
   font-size: 60px;
   font-family: fantasy;
 }
 h2{
     line-height: 70px;
     margin-left: 30px;
-  color: #00004d;
+  color: #94b8b8;
   font-size: 40px;
    font-family: fantasy;
 }
  h3{
    margin-left: 30px;
-   color: #00004d;
+   color: #94b8b8;
    font-size: 35px;
    font-family: fantasy;
 }
@@ -199,7 +208,7 @@ h2{
             padding:17px;
             display: inline;
             font-size: 20px;
-            color: white;
+            color: #94b8b8;
             font-family: Optima;
             border: 0.5px solid white;
             border-radius: 20px;
@@ -212,20 +221,26 @@ h2{
             padding:17px;
             display: inline;
             font-size: 20px;
-            color: white;
+            color: #94b8b8;
             font-family: Optima;
             border: 1px solid white;
             border-radius: 20px;
         }
 /* email link */
-#contact>p>a{
-    
-    color:white;
-    font-family: Optima;
-    font-size: 22px;
-    text-decoration: none;
 
-    }
+        #contact{
+           color:#94b8b8;
+            font-size: 18px;
+            font-family: Optima;
+            text-decoration: none;
+            
+        }
+        #contact>address{
+            margin-left: 30px;
+            margin-bottom: 50px;
+        }
+        
+    
 /* portfolio link*/
         
 #portfolio>ul>li{
@@ -240,7 +255,7 @@ h2{
             border-radius: 3px;
         }
 #portfolio>ul>li>a{
-            color: white;
+            color: #94b8b8;
             text-decoration: none;  
         }
   
@@ -345,14 +360,12 @@ h2{
 </div>
     <div id="contact">
     <h3>Contact me</h3>
-        <p>
-        <b>Feel free to contact me through email or phone </b> 
-        </p>
-        <p>
-        <a href="mailto:hossainmd671@gmail.com">Email : hossainmd671@gmail.com</a>
-        </p>
-        <p>Or</p>
-        <p>Call me at : (347)-573-6358</p>
+        <address id="address">
+        Feel free to contact me through email or phone <br>   
+        <a href="mailto:hossainmd671@gmail.com">Email : hossainmd671@gmail.com</a><br>  
+        Or<br>  
+        Call me at : (347)-573-6358<br>  
+        </address>
         
     </div>
 </body>
