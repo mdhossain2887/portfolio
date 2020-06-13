@@ -43,6 +43,17 @@ $(document).ready(function(){
                 $(this).css("color","blue");
             });     
         })
+     $(document).ready(function(){
+                $("#return a").mouseenter(function(){
+                $(this).css("background-color","pink");
+                $(this).css("color","black"); 
+                });
+                $("#return a").mouseleave(function(){ 
+                $(this).css("background-color","#00004d");
+                $(this).css("color","bisque"); 
+            });     
+        })
+     
      
 // smooth scrolling     
  $(function() {
@@ -258,6 +269,21 @@ h2{
             color: #94b8b8;
             text-decoration: none;  
         }
+        
+/*   return home link     */
+        #return>a{
+            margin-left: 50px;
+            text-decoration: none;
+            font-size:18px;
+            border: 1px solid bisque;
+            border-width:thin;
+            border-radius:2px;
+            color: bisque;
+            padding:6px;
+        }
+        #return{
+            margin-bottom: 50px;
+        }
   
 </style>
     
@@ -369,6 +395,10 @@ h2{
         Call me at : (347)-573-6358<br>  
         </address>
         
+    </div>
+    <div id="return">
+        <a href="#cssmenu">return home</a>
+    
     </div>
 </body>
 <html>
