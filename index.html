@@ -6,23 +6,31 @@
 <!-- Jquery starts here-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
- <script>             
+ <script> 
+// portfolio source code
         $(document).ready(function(){
                 $("#portfolio ul li").mouseenter(function(){
                 $(this).css("background-color","#8c8cd9"); 
+                 $(this).css("color","#00004d");
                 });
                 $("#portfolio ul li").mouseleave(function(){
                 $(this).css("background-color","#00004d");
+                $(this).css("color","#94b8b8");
             });     
         })
-        $(document).ready(function(){
-                $("#portfolio ul li a").mouseenter(function(){
-                $(this).css("color","#00004d"); 
+
+//gallary option
+      $(document).ready(function(){
+                $("#portfolio a ").mouseenter(function(){
+                $(this).css("color","#00004d");
+                $(this).css("background-color","#8c8cd9");
                 });
-                $("#portfolio ul li a").mouseleave(function(){
-                $(this).css("color","#94b8b8");    
+                $("#portfolio a").mouseleave(function(){
+                $(this).css("color","#94b8b8");
+                $(this).css("background-color","#00004d");
             });     
         })
+     
 $(document).ready(function(){
                 $("#skills1 ul li, #skills2 ul li").mouseenter(function(){
                 $(this).css("background-color","#8c8cd9");
@@ -263,8 +271,22 @@ h2{
         }
 #portfolio>ul>li>a{
             color: #94b8b8;
-            text-decoration: none;  
+            text-decoration: none;
+        
+            
         }
+        
+#portfolio>a{
+            color: #94b8b8;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: Optima;
+            padding:10px;
+            margin-left: 40px;
+        } 
+        
         
 /*   return home link     */
         #return>a{
@@ -355,6 +377,7 @@ h2{
     
     <div id="portfolio">
         <h3>Portfolio</h3>
+        <p><b>Projects :</b></p>
         <ul>
         
         <li><a href="https://github.com/mdhossain2887/MolinaHealthCare.git" target="_blank">source code 1</a></li>
@@ -362,7 +385,9 @@ h2{
         </li><li><a href="https://github.com/mdhossain2887/RestAssured.git" target="_blank">source code 3</a>
         </li>
         <li><a href="https://github.com/mdhossain2887/portfolio.git" target="_blank">source code 4</a></li>
-        </ul>   
+        </ul> 
+        <p><b>Videos :</b></p>
+        <a href="javatutorial.html" target="_blank">Gallary</a>
     </div> 
     
     
