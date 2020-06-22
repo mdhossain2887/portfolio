@@ -5,38 +5,68 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
  <script>             
-//        $(document).ready(function(){
-//                $("iframe").mouseenter(function(){
-//                $(this).css("border","5px solid purple");
-//                });
-//                $("iframe").mouseleave(function(){
-//                $(this).css("border","1px solid purple"); 
-//            });     
-//        })
+     $(document).ready(function(){
+                $("#imageid a img").mouseenter(function(){
+             
+                $(this).css("border"," 1px solid yellow"); 
+                });
+                $("#imageid a img").mouseleave(function(){
+                $(this).css("border","1px solid green"); 
+                
+            });     
+        })
+       $(document).ready(function(){
+                $("#videoLink").mouseenter(function(){
+             
+                $(this).css("color","yellow"); 
+                });
+                $("#videoLink").mouseleave(function(){
+               $(this).css("color","#00b300");
+                
+            });     
+        })
+     
 </script>
 <style>
+ 
     body{
-        background-color: #005266;
-    }
-    iframe{
-        margin-left: 25px;
-        margin-top: 25px;
-        border: 2px solid #005266;
-        border-radius:10px;
-    }
-   
+        
+  background-color:#003333;
+    }   
     p{
         margin-bottom: 40px;
-        color: #99ffff;
-        font-family: optima;
+        color: #00b300;
+        font-family: Times;
         font-size: 20px;
     }
     h1,h2{
-        color: #99ffff;
+        color:#00b300;
         font-family: optima;
     }
     h1{
         margin-top: 100px;
+    }
+#imageid{
+    position: relative;
+    margin-left: 95px;
+        
+}
+#imageid>a>img{
+    border: 1px solid green;
+    
+        
+}
+    #contactId{
+        color: #00b300;
+        background-color: black;
+    }
+#div1{
+
+    margin-left: 90px;
+    
+    }
+    #videoLink{
+        text-decoration:underline;
     }
 </style>
 <title>javaTutorial</title>
@@ -44,53 +74,77 @@
 <body>
 
 <div id="div1">
-    <h1 align="center">Java tutorial by Kashem Hossain</h1>
-<p align="center">Java is a high-level programming language originally developed by Sun <br>Microsystems and released in 1995. Java runs on a variety of platforms,<br> such as Windows, Mac OS, and the various versions of UNIX. This tutorial<br> gives a complete understanding of Java. This reference will take<br> you through simple and practical approaches while learning<br> Java Programming language.</p>
-
-   <h2 align="center">Audience</h2> 
-<p align="center">This tutorial has been prepared for the beginners to help them understand<br> the basic to advanced concepts related to Java Programming language<br></p>     
-
-</div>  
+    <h1>What is java</h1>
+<p>Java is a high-level programming language originally developed by Sun <br>Microsystems and released in 1995. Java runs on a variety of platforms,<br> such as Windows, Mac OS, and the various versions of UNIX. This tutorial<br> gives a complete understanding of Java. This reference will take<br> you through simple and practical approaches while learning<br> Java Programming language.</p>
     
-    <div>
+    <h2>Application</h2>
+    <p>
+According to Sun, 3 billion devices run Java. There are many devices<br>
+where Java is currently used. Some of them are as follows:<br>
+
+Desktop Applications such as acrobat reader, media player, antivirus, etc.<br>
+Web Applications such as irctc.co.in, javatpoint.com, etc. Enterprise <br>
+Applications such as banking applications, mobile, embedded System,<br> 
+smart card, robotics games, etc.<br>
+</p>
+   <h2>Audience</h2> 
+<p>This tutorial has been prepared for the beginners to help them understand<br> the basic concepts related to Java Programming language<br></p>   
+    <h2>Videos </h2> 
+<p id="videoLink">Following are the latest video tutorial to learn Java basic to advanced  </p> 
+</div>
+  
+    <div id="imageid">
     
-    <iframe width="300" height="180" src="https://www.youtube.com/embed/pi-QcIMI4kI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/fvO2yRogegM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/vygD9x3Dmkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/UrHSn55xiXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/hNvuZPZB5Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/czbhEfhyO0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/HItlfdUqlfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/c_FhH0wCEAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/fmjKjD8OZoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/VpeDeA9v98c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/j5fEw-vuZhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/tcJsz31eF-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/PtMbig7RNew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/T8A3fDhwr08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/SjduPUtkwFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/10AkvS_o3is" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/6PYjoFxF4V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180"  src="https://www.youtube.com/embed/Bdkn1NDXues" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/xl4kOrBtoNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/_FlJEY6y3tI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/OEk6BU8SHJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/_RxG3SuobAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/Dkbrm-q5HR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/jhr7_x92fiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/VEuKyYdssuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/X2OHurvYLrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180"  src="https://www.youtube.com/embed/r5qBiIgjMrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/Usxft2DLtOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-        <iframe width="300" height="180"  src="https://www.youtube.com/embed/fjsM0eSi6SQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180"  src="https://www.youtube.com/embed/m8UxpvIddZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/qAia8VOz31c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/xw35Mcl9pHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180" src="https://www.youtube.com/embed/INZwL9-buV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="300" height="180"  src="https://www.youtube.com/embed/og0ZSpkId3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="https://youtu.be/pi-QcIMI4kI" target="_blank"><img src="pic/untitled.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/fvO2yRogegM" target="_blank"><img src="pic/im1.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/vygD9x3Dmkw" target="_blank"><img src="pic/Untitled1.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/UrHSn55xiXg" target="_blank"><img src="pic/Untitled2.png" width="300" height="180"/></a><br>
+    <a href="https://youtu.be/hNvuZPZB5Xc" target="_blank"><img src="pic/Untitled3.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/czbhEfhyO0M" target="_blank"><img src="pic/Untitled4.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/HItlfdUqlfE" target="_blank"><img src="pic/Untitled5.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/c_FhH0wCEAU" target="_blank"><img src="pic/Untitled6.png" width="300" height="180"/></a><br>
+    <a href="https://youtu.be/fmjKjD8OZoM" target="_blank"><img src="pic/Untitled8.png" width="300" height="180"/></a>       
+    <a href="https://youtu.be/VpeDeA9v98c" target="_blank"><img src="pic/Untitled9.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/j5fEw-vuZhM" target="_blank"><img src="pic/Untitled10.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/tcJsz31eF-I" target="_blank"><img src="pic/Untitled11.png" width="300" height="180"/></a><br>
+    <a href="https://youtu.be/PtMbig7RNew" target="_blank"><img src="pic/13.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/T8A3fDhwr08" target="_blank"><img src="pic/Untitled13.3.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/SjduPUtkwFE" target="_blank"><img src="pic/13.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/10AkvS_o3is" target="_blank"><img src="pic/Untitled14.png" width="300" height="180"/></a> <br>
+    <a href="https://youtu.be/6PYjoFxF4V0" target="_blank"><img src="pic/Untitled15.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/Bdkn1NDXues" target="_blank"><img src="pic/Untitled16.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/xl4kOrBtoNY" target="_blank"><img src="pic/Untitled17.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/_FlJEY6y3tI" target="_blank"><img src="pic/Untitled18.png" width="300" height="180"/></a><br>
+    <a href="https://youtu.be/OEk6BU8SHJk" target="_blank"><img src="pic/Untitled19.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/_RxG3SuobAo" target="_blank"><img src="pic/Untitled20.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/Dkbrm-q5HR8" target="_blank"><img src="pic/Untitled21.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/jhr7_x92fiM" target="_blank"><img src="pic/Untitled22.png" width="300" height="180"/></a><br>      
+    <a href="https://youtu.be/VEuKyYdssuo" target="_blank"><img src="pic/Untitled23.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/X2OHurvYLrk" target="_blank"><img src="pic/Untitled24.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/r5qBiIgjMrA" target="_blank"><img src="pic/Untitled25.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/Usxft2DLtOY" target="_blank"><img src="pic/Untitled26.png" width="300" height="180"/></a><br>
+    <a href="https://youtu.be/fjsM0eSi6SQ" target="_blank"><img src="pic/Untitled27.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/m8UxpvIddZI" target="_blank"><img src="pic/Untitled28.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/qAia8VOz31c" target="_blank"><img src="pic/Untitled29.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/xw35Mcl9pHc" target="_blank"><img src="pic/Untitled30.png" width="300" height="180"/></a><br>
+    <a href="https://youtu.be/INZwL9-buV0" target="_blank"><img src="pic/Untitled31.png" width="300" height="180"/></a>
+    <a href="https://youtu.be/og0ZSpkId3s" target="_blank"><img src="pic/Untitled32.png" width="300" height="180"/></a> 
     </div>
+   
+    <div id="contactId" align="center">
+        <br />
+        <br />
+        <h3>Contact me</h3>
+        <address id="address">
+        Feel free to contact me through email or phone <br>   
+        <a href="mailto:hossainmd671@gmail.com">Email : hossainmd671@gmail.com</a><br>  
+        Or<br>  
+        Call me at : (347)-573-6358<br>  
+        </address>
+        <br />
+        <br />
     
-    
+    </div>
    
     
 </body>
