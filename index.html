@@ -7,11 +7,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
  <script> 
+     // footer part
+        $(document).ready(function(){
+                $("#footer a").mouseenter(function(){
+                 $(this).css("color","white");
+                });
+                $("#footer a").mouseleave(function(){
+                $(this).css("color","darkturquoise");
+            });     
+        })
 // portfolio source code
         $(document).ready(function(){
                 $("#portfolio ul li").mouseenter(function(){
-                $(this).css("background-color","#8c8cd9"); 
-                 $(this).css("color","#00004d");
+                $(this).css("background-color","#00061a"); 
+                 $(this).css("color","grey");
                 });
                 $("#portfolio ul li").mouseleave(function(){
                 $(this).css("background-color","#00004d");
@@ -22,8 +31,8 @@
 //gallary option
       $(document).ready(function(){
                 $("#portfolio a ").mouseenter(function(){
-                $(this).css("color","#00004d");
-                $(this).css("background-color","#8c8cd9");
+                $(this).css("color","grey");
+                $(this).css("background-color","#00061a");
                 });
                 $("#portfolio a").mouseleave(function(){
                 $(this).css("color","#94b8b8");
@@ -33,12 +42,11 @@
      
 $(document).ready(function(){
                 $("#skills1 ul li, #skills2 ul li").mouseenter(function(){
-                $(this).css("background-color","#8c8cd9");
-                $(this).css("color","#00004d");
+                $(this).css("border-bottom","2px solid white");
                 });
                 $("#skills1 ul li, #skills2 ul li").mouseleave(function(){
-                $(this).css("background-color","#00004d"); 
-                $(this).css("color","#94b8b8");
+                 $(this).css("border-bottom","1px solid #94b8b8");
+                    
             });     
         })
      $(document).ready(function(){
@@ -194,7 +202,7 @@ p{
   margin-left: 30px;
   text-align: left;
   color:#94b8b8;
-  font-family: Optima;
+  font-family: Times;
   font-size: 18px;
 
 }
@@ -202,20 +210,20 @@ p{
 h1{
   color: #94b8b8;
   font-size: 60px;
-  font-family: fantasy;
+  font-family: Times;
 }
 h2{
     line-height: 70px;
     margin-left: 30px;
   color: #94b8b8;
   font-size: 40px;
-   font-family: fantasy;
+   font-family: Times;
 }
  h3{
    margin-left: 30px;
    color: #94b8b8;
    font-size: 35px;
-   font-family: fantasy;
+   font-family: Times;
 }
 
 /* skills box 1 */
@@ -223,11 +231,11 @@ h2{
             list-style: none;
             padding:17px;
             display: inline;
-            font-size: 20px;
+            font-size: 13px;
             color: #94b8b8;
-            font-family: Optima;
+            font-family: Times;
             border: 0.5px solid white;
-            border-radius: 20px;
+            border-radius: 1px;
         }
         
 /* skills box 2 */
@@ -236,18 +244,18 @@ h2{
             list-style: none;
             padding:17px;
             display: inline;
-            font-size: 20px;
+            font-size: 13px;
             color: #94b8b8;
-            font-family: Optima;
-            border: 1px solid white;
-            border-radius: 20px;
+            font-family: Times;
+            border: 0.5px solid white;
+            border-radius: 1px;
         }
 /* email link */
 
         #contact{
            color:#94b8b8;
             font-size: 18px;
-            font-family: Optima;
+            font-family: Times;
             text-decoration: none;
             
         }
@@ -265,7 +273,7 @@ h2{
             padding:10px;
             display: inline;
             font-size: 12px;
-            font-family: Optima;
+            font-family: Times;
             border: 1px solid white;
             border-radius: 3px;
         }
@@ -282,7 +290,7 @@ h2{
             border: 1px solid white;
             border-radius: 3px;
             font-size: 12px;
-            font-family: Optima;
+            font-family: Times;
             padding:10px;
             margin-left: 40px;
         } 
@@ -302,7 +310,20 @@ h2{
         #return{
             margin-bottom: 50px;
         }
-       
+          #footer{
+        background-color: #000033;  
+        text-align: center;
+    }
+    #footer>a{
+        text-decoration: none;
+        color: darkturquoise;
+        line-height: 30px;
+        position: relative; 
+    }
+    #footer>h4{
+        color: azure;
+    } 
+  
   
 </style>
     
@@ -425,5 +446,15 @@ h2{
         <a href="#cssmenu">return home</a>
     
     </div>
+    <div id="footer" >
+    <br>
+<h4>Follow me</h4>
+    <a href="https://www.linkedin.com/in/kashem-hossain">LinkedIn</a><br>
+    <a href="">Facebook</a><br>
+    <a href="">Twitter</a><br>
+    <a href="">Instagram</a><br>
+    <br>
+
+</div>
 </body>
 <html>
